@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>countdown timer</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+<img src="{2C334A6D-542B-41FD-A3FB-EE1B6044F710}.png.jpg" class="logo">
+
+<div class="content">
+  <p>Space launch due to happen soon.</p>
+  <h1>We're <span>Launching</span>Soon.</h1>
+<div class="countdown">
+  <div>
+    <p id="DAYS">00</p>
+    <span>DAYS</span>
+  </div>
+   <div>
+    <p id="HOURS">00</p>
+    <span>HOURS</span>
+  </div>
+   <div>
+    <p id="MINUTES">00</p>
+    <span>MINUTES</span>
+  </div>
+   <div>
+    <p id="SECONDS">00</p>
+    <span>SECONDS</span>
+  </div>
+</div>
+  <button type="button"> FIND OUT MORE INFO HERE <img src="{CBA43026-12B2-450B-B554-587F66E6CBEE}.png.jpg"></button>
+</div>
+<img src="{754BCF25-E9B6-4C9D-A402-9BB3E2922A95}.png.jpg" class="rocket">
+  </div>
+<script>
+  let DAYS = document.getElementById("days");
+let HOURS = document.getElementById("HOURS");
+let MINUTES = document.getElementById("MINUTES");
+let SECONDS = document.getElementById("SECONDS");
+
+
+setInterval(() =>{
+  let currentTIME  = new Date();
+
+DAYS.innerHTML = currentTIME.getDay();
+HOURS.innerHTML = currentTIME.getHours();
+MINUTES.innerHTML = currentTIME.getMinutes();
+SECONDS.innerHTML = currentTIME.getSeconds();
+
+},1000)
+
+
+
+
+
+
+
+
+
+
+
+</script>
+ 
+  
+</body>
+</html>
